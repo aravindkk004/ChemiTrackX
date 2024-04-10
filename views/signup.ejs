@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup.css">
+    <title>ChemiTrackX</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="off">
+            </div>
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+        <p>Already have an account?<a href="/login">Login</a></p>
+    </div> -->
+    <div class="container">
+		<div class="left">
+			<div class="header">
+				<!-- <p>Start your translation <span>adventure</span> here.</p>
+				<p><span>Signup</span> and connect with the world.</p> -->
+                <p>Join the <span>ChemiTrackX</span> community <br>to explore the full potential of the <span>chemical world.</span></p>
+			</div>
+			<form action="/signup" method="post">
+				<img src="/images/contact3.jpg" id="signup">
+				<div class="inputs">
+                    <label for="username">User Name:</label>
+                    <input type="text" id="username" name="fullname" placeholder="Enter your name" required autocomplete="off">
+                    <!-- email id  -->
+					<label for="name">Email:</label>
+                    <input type="email" id="name" name="username" placeholder="Enter your Email" required autocomplete="off">
+					<!-- password  -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" placeholder="Enter your password" required autocomplete="off">
+                    <label for="confirmpassword">Confirm Password:</label>
+                    <input type="password" id="name" name="confirmpassword" placeholder="Confirm Password" required autocomplete="off">
+					<button type="submit" class="submit-btn">Sign Up</button>
+					<p>Already have an account?<a href="/">Login</a></p>
+				</div>
+			</form>
+		</div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

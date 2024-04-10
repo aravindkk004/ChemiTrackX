@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --black_letter: #1B254B;
+    --bg: #F4F7FE;
+    --white_bg: #FFFFFF;
+    /* --icons: #422AFB; */
+    --icons: blue;
+    --trans: #FFFFFF1A;
+    --lg_black: #A3AED0;
+}
+.container{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: var(--bg);
+}
+nav{
+    background-color: var(--trans);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_options{
+    display: flex;
+}
+.nav_options p{
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.nav_options p:hover{
+    background-color: var(--white_bg);
+}
+nav span{
+    color: var(--icons);
+    font-size: 20px;
+}
+.home_nav a{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black_letter);
+    cursor: pointer;
+    background-color: var(--white_bg);
+    padding: 10px;
+    border-radius: 15px;
+}
+.home_nav a:hover{
+    box-shadow: 2px 2px 2px grey;
+}
+.home_nav a i{
+    margin-right: 10px;
+    color: var(--icons);
+}
+.center_nav p, .right_nav p{
+    display: flex;
+    align-items: center;
+    color: var(--black_letter);
+    cursor: pointer;
+    font-size: 20px;
+}
+.right_nav p i{
+    color: var(--icons);
+    margin: 0px 10px;
+}
+.right_nav p{
+    background-color: var(--white_bg);
+    padding: 15px;
+    border-radius: 15px;
+}
+.right_nav span{
+    margin-right: 10px;
+}
+.right_nav p:hover{
+    box-shadow: 2px 2px 10px grey;
+}
+.profile{
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    background-color: var(--white_bg);
+    border-radius: 15px;
+    padding: 10px 25px;
+    box-shadow: 2px 2px 10px grey;
+    display: none;
+}
+.profile div{
+    margin: 20px 0px;
+    padding: 10px;
+}
+.profile div:hover{
+    border-left: 5px solid var(--icons);
+}
+.profile a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.profile p{
+    font-size: 19px;
+    color: var(--black_letter);
+    margin-left: 10px;
+}
+.profile i{
+    color: var(--lg_black);
+    font-size: 23px;
+}
+.profile span, .profile i{
+    background-color: var(--bg);
+    padding: 10px;
+    border-radius: 50%;
+} 
+.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    /* justify-content: center; */
+}
+.firstrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white_bg);
+    padding: 30px;
+    border-radius: 10px;
+    width: 85%;
+    margin-top: 20px;
+    text-align: center;
+    /* background-color: red; */
+}
+.firstrow h1{
+    color: var(--icons);
+    /* background-color: yellow; */
+}
+.firstrow p{
+    color: var(--black_letter);
+    font-size: 20px;
+    margin: 10px 00px;
+    /* background-color: red; */
+    line-height: 2rem;
+}
+.firstrow button{
+    background-color: var(--icons);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--white_bg);
+}
+.secondrow, .thirdrow{
+    display: flex;
+    /* background-color: red; */
+    /* height: 100px; */
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.thirdrow img{
+    height: 400px;
+    width: 600px;
+}
+.blue{
+    background-color: #34495e;
+}
+.blue .right3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left, .right, .left3, .right3{
+    /* background-color: var(--white_bg); */
+    border-radius: 10px;
+    flex-basis: 48%;
+    padding: 20px;
+}
+.left h2, .left3 h2{
+    color: var(--white_bg);
+    margin: 10px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+} 
+.left p, .left3 p{
+    font-size: 20px;
+    line-height: 2rem;
+    color: var(--white_bg);
+}
+::-webkit-scrollbar{
+	height: 8px;
+	width: 8px;
+}
+::-webkit-scrollbar-track{
+	background: none;
+}
+::-webkit-scrollbar-thumb{
+	background: transparent;
+	border-radius: 5px;
+}
+body:hover::-webkit-scrollbar-thumb{
+	/* background: #717171; */
+    background-color: var(--lg_black);
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #888;
+}
+.white p{
+    color: var(--black_letter);
+    font-size: 20px;
+    line-height: 2rem;
+}
+.white h2{
+    margin: 10px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--black_letter);
+}
+marquee{
+    background-color: red;
+    padding: 10px;
+    color: var(--white_bg);
+    font-size: 20px;
+}

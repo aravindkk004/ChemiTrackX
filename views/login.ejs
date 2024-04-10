@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="/login.css">
+    <title>ChemiTrackX</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+		<div class="left">
+		</div>
+		<div class="right">
+			<div class="header">
+                <p>Onward to a world of <span>Chemical<br> Insights</span> and<span>Collabortion</span> </p>
+			</div>
+			<form action="/login" method="post">
+				<img src="/images/loginimage.png">
+				<div class="inputs">
+					<label for="name">User Name:</label>
+                    <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="off">
+                    <div class="visibility">
+                        <span class="material-symbols-outlined" id="visible">
+                            visibility
+                        </span>
+                        <span class="material-symbols-outlined" id="not-visible">
+                            visibility_off
+                        </span>
+                    </div>
+					<button type="submit">Login</button>
+					<a href="" id="forgot">forgot password?</a>
+					<p id="dont">Don't have an account?<a href="/signup" id="#signupspan">Signup</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+    <script src="/js/login.js"></script>
+
+</body>
+</html>

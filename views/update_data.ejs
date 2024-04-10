@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/product.css">
+    <link rel="stylesheet" href="/add_product.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>ChemiTrackX</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="editbox">
+        <div class="headerbox">
+            <a href="data"><span class="material-symbols-outlined">
+                arrow_back
+            </span></a>
+            <p>Update the Product</p>
+            <a href="data"><span class="material-symbols-outlined" id="close">
+                close
+            </span></a>
+        </div>
+        <div class="editingbox">
+            <form  action="/update_data/<%= product._id %>" method="POST" id="editBox_form">
+                <div class="product">
+                    <label for="year">year:</label>
+                    <input type="text" id="name" name="year" value="<%= product.year %>">
+                </div>
+                <div class="product">
+                    <label for="imports">Imports:</label>
+                    <input type="text" id="volume" name="imports" value="<%= product.imports %>">
+                </div>
+                <div class="product">
+                    <label for="exports">Exports:</label>
+                    <input type="text" id="rate" name="exports" value="<%= product.exports %>">
+                </div>
+                <div class="product">
+                    <label for="rate">Production Rate:</label>
+                    <input type="text" id="cost" name="rate" value="<%= product.rate %>">
+                </div>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/product.js"></script>
+</body>
+</html>.

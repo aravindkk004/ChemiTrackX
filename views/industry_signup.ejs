@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChemiTrackX</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="industry_signup.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="/industry_signup" method="post" id="form">
+                <div id="form-1">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="business"></ion-icon>
+                        </span>
+                        <input type="text" required name="name">
+                        <label for="name">Company Name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="barcode"></ion-icon>
+                        </span>
+                        <input type="text" required name="corporate_num">
+                        <label for="corporate_num">Corporate Identification Number</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="reader"></ion-icon>
+                        </span>
+                        <input type="text" required name="type">
+                        <label for="type">Type Of Company</label>
+                    </div>
+                    <div class="btn">
+                        <a href="" id="next-btn" class="form-1-btn">Next</a>
+                    </div>
+                    
+                    <div class="login-register">
+                        <p>Already have an account? <a href="/industry_login" class="login-link">Login</a></p>
+                    </div>
+                </div>
+                <div id="form-2">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="business"></ion-icon>
+                    </span>
+                    <input type="text" required name="off_num">
+                    <label for="off_num">Registered Office Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="call"></ion-icon>
+                    </span>
+                    <input type="tel" required name="phone">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required name="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="btn">
+                    <button id="next-btn" class="back-btn2">Back</button>
+                    <a href="" class="form-2-btn">Next</a>
+                </div>
+                </div>
+                <div id="form-3">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="calendar"></ion-icon>
+                    </span>
+                    <input type="date" name="date">
+                    <label for="date">Date Of Incorporation</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required name="pass">
+                    <label for="pass">Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required name="confirmpass">
+                    <label for="confirmpass">Confirm Password</label>
+                </div>
+                <div class="btn">
+                    <button id="next-btn" class="back-btn3">Back</button>
+                    <button id="next-btn" type="submit" class="form-3-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+            </form>
+            
+    </div>
+            <script src="/js/industry_signup.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemiTrackX</title>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js'></script>
+</head>
+
+<body>
+    <div class="head">
+        <div class="home">
+            <a href="industry_home">Home</a>
+        </div>
+        <div>
+            <h1>&nbsp;&nbsp;Main Dashboard</h1>
+        </div>
+        <div class="search">
+            <span class="icon">
+                <ion-icon name="search"></ion-icon>
+            </span>
+            <input type="text" placeholder="search">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <span class="icon">
+                <ion-icon name="cellular"></ion-icon>
+            </span>
+            <p>Earnings<span>$245,000</span></p>
+        </div>
+        <div class="col">
+            <span class="icon">
+                <ion-icon name="copy"></ion-icon>
+            </span>
+            <p>Spend<span>$32,000</span></p>
+        </div>
+        <div class="col">
+            <span class="icon">
+                <ion-icon name="grid"></ion-icon>
+            </span>
+            <p>Balance<span>$213,000</span></p>
+        </div>
+        <div class="col">
+            <span class="icon">
+                <ion-icon name="analytics"></ion-icon>
+            </span>
+            <p>Tasks<span>15</span></p>
+        </div>
+        <div class="col">
+            <span class="icon">
+                <ion-icon name="home"></ion-icon>
+            </span>
+            <p>Projects<span>42</span></p>
+        </div>
+        <div class="col">
+            <span class="icon">
+                <ion-icon name="cellular"></ion-icon>
+            </span>
+            <p>Sales <span>$850,000</span></p>
+
+        </div>
+
+    </div>
+    <div class="rows">
+        <div class="cols">
+            <h2>Production Trends</h2>
+            <canvas id="lineChart" width="400" height="200"></canvas>
+
+        </div>
+        <div class="cols">
+            <h2>Analysis</h2>
+            <canvas id="scatterChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <div class="rows">
+        <div class="cols">
+            <h2>Sample Table</h2>
+            <table border="0">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Name</th>
+                    <th>Progress</th>
+                    <th>Quantity</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label>
+                    <td>
+                        Acetone
+                    </td>
+                    <td>85%</td>
+                    <td>500 tons</td>
+                    <td>2023-01-01</td>
+                </tr>
+                <tr>
+
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label>
+                    <td>
+                        Ethanol
+                    </td>
+                    <td>60%</td>
+                    <td>300 tons</td>
+                    <td>2023-01-02</td>
+                </tr>
+                <tr>
+
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Methanol
+                    </td>
+                    <td>95%</td>
+                    <td>800 tons</td>
+                    <td>2023-01-03</td>
+                </tr>
+                <tr>
+
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Hydrochloric Acid
+                    </td>
+                    <td>70%</td>
+                    <td>400 tons</td>
+                    <td>2023-01-04</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Sulfuric Acid
+                    </td>
+                    <td>50%</td>
+                    <td>200 tons</td>
+                    <td>2023-01-05</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Sodium Hydroxide
+                    </td>
+                    <td>75%</td>
+                    <td>600 tons</td>
+                    <td>2023-01-06</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Ammonia
+                    </td>
+                    <td>90%</td>
+                    <td>700 tons</td>
+                    <td>2023-01-07</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Nitric Acid
+                    </td>
+                    <td>65%</td>
+                    <td>350 tons</td>
+                    <td>2023-01-08</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Formaldehyde
+                    </td>
+                    <td>80%</td>
+                    <td>550 tons</td>
+                    <td>2023-01-09</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Chloroform	
+                    </td>
+                    <td>55%</td>
+                    <td>270 tons</td>
+                    <td>2023-01-10</td>
+                </tr>
+                <tr>
+                    <td><label>
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        </label></td>
+                    <td>
+                        Ethylene Glycol
+                    </td>
+                    <td>92%</td>
+                    <td>720 tons</td>
+                    <td>2023-01-11</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cols">
+            <h2>Simple Pie Chart</h2>
+            <canvas id="pieChart" width="50px" height="50px"></canvas>
+        </div>
+    </div>
+    <div class="rows">
+        <div class="cols">
+            <div id="calendar"></div>
+        </div>
+        <div class="cols">
+            <h2>Industry Performance</h2>
+            <canvas id="radarChart" width="50" height="50"></canvas>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <p>&copy;ChemiTrackX. All Rights reserved.</p>
+        </div>
+
+        <div class="right">
+            <p>Support</p>
+            <p>License</p>
+            <p>Terms OF Use</p>
+            <p>Blog</p>
+        </div>
+    </div>
+
+    <script src="../js/chart1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
